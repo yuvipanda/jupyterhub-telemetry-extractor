@@ -30,13 +30,6 @@ def parse_activity_line(line):
         raise
     return (ts, username, action)
 
-def generate_session_data(logfile_path):
-    """
-    Generate user session data from JupyterHub logs in infile_path
-    """
-    with open(logfile_path) as f:
-        for l in f:
-                yield {'timestamp': timestamp.isoformat(), 'user': user, 'action': action}
 
 def main():
     eventlog = EventLog(
