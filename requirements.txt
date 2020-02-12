@@ -1,2 +1,2 @@
-git+https://github.com/yuipanda/telemetry.git@override-timestamp
+git+https://github.com/yuvipanda/telemetry.git@override-timestamp
 python-dateutil
